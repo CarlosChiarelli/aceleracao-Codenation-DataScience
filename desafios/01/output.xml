@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skipped="0" tests="10" time="4.168"><testcase classname="test_submit" file="test_submit.py" line="3" name="test_q1" time="0.002"><failure message="assert (537577, 14) == (537577, 12)
+  At index 1 diff: 14 != 12
+  Full diff:
+  - (537577, 14)
+  ?           ^
+  + (537577, 12)
+  ?           ^">E   assert (537577, 14) == (537577, 12)
+      At index 1 diff: 14 != 12
+      Full diff:
+      - (537577, 14)
+      ?           ^
+      + (537577, 12)
+      ?           ^</failure></testcase><testcase classname="test_submit" file="test_submit.py" line="9" name="test_q2" time="0.026"></testcase><testcase classname="test_submit" file="test_submit.py" line="15" name="test_q3" time="0.007"></testcase><testcase classname="test_submit" file="test_submit.py" line="21" name="test_q4" time="0.000"></testcase><testcase classname="test_submit" file="test_submit.py" line="27" name="test_q5" time="0.229"></testcase><testcase classname="test_submit" file="test_submit.py" line="33" name="test_q6" time="0.008"></testcase><testcase classname="test_submit" file="test_submit.py" line="39" name="test_q7" time="0.004"></testcase><testcase classname="test_submit" file="test_submit.py" line="45" name="test_q8" time="0.002"></testcase><testcase classname="test_submit" file="test_submit.py" line="51" name="test_q9" time="0.070"></testcase><testcase classname="test_submit" file="test_submit.py" line="57" name="test_q10" time="0.021"><failure message="assert False">E   assert False</failure></testcase></testsuite>

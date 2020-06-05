@@ -1,0 +1,51 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.7, pytest-4.6.2, py-1.8.0, pluggy-0.12.0 -- C:\Users\jardi\codenation\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\jardi\codenation\data-science-2
+collecting ... collected 7 items
+
+test_submit.py::test_q1 PASSED                                           [ 14%]
+test_submit.py::test_q2 PASSED                                           [ 28%]
+test_submit.py::test_q3 PASSED                                           [ 42%]
+test_submit.py::test_q4 PASSED                                           [ 57%]
+test_submit.py::test_q5 PASSED                                           [ 71%]
+test_submit.py::test_q6 PASSED                                           [ 85%]
+test_submit.py::test_q7 PASSED                                           [100%]
+
+============================== warnings summary ===============================
+C:\Users\jardi\codenation\venv\lib\site-packages\ipywidgets\widgets\widget_selection.py:9
+C:\Users\jardi\codenation\venv\lib\site-packages\ipywidgets\widgets\widget_selection.py:9
+  C:\Users\jardi\codenation\venv\lib\site-packages\ipywidgets\widgets\widget_selection.py:9: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    from collections import Mapping, Iterable
+
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:824
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:824
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:824
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:824
+  C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:824: RuntimeWarning: invalid value encountered in greater_equal
+    keep = (tmp_a >= first_edge)
+
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:825
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:825
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:825
+C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:825
+  C:\Users\jardi\codenation\venv\lib\site-packages\numpy\lib\histograms.py:825: RuntimeWarning: invalid value encountered in less_equal
+    keep &= (tmp_a <= last_edge)
+
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+  C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447: RuntimeWarning: invalid value encountered in greater
+    X = X[np.logical_and(X > clip[0], X < clip[1])] # won't work for two columns.
+
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447
+  C:\Users\jardi\codenation\venv\lib\site-packages\statsmodels\nonparametric\kde.py:447: RuntimeWarning: invalid value encountered in less
+    X = X[np.logical_and(X > clip[0], X < clip[1])] # won't work for two columns.
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+--- generated xml file: C:\Users\jardi\codenation\data-science-2\output.xml ---
+==================== 7 passed, 18 warnings in 3.13 seconds ====================

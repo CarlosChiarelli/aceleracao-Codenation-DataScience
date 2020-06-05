@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skipped="0" tests="7" time="3.131"><testcase classname="test_submit" file="test_submit.py" line="3" name="test_q1" time="0.003"><system-out>pValor:  5.681722541339695e-07 
+não é normal!
+</system-out></testcase><testcase classname="test_submit" file="test_submit.py" line="8" name="test_q2" time="0.004"><system-out>pValor:  0.001478366424594868 
+não é normal
+</system-out></testcase><testcase classname="test_submit" file="test_submit.py" line="13" name="test_q3" time="0.002"></testcase><testcase classname="test_submit" file="test_submit.py" line="18" name="test_q4" time="0.003"></testcase><testcase classname="test_submit" file="test_submit.py" line="23" name="test_q5" time="0.009"><system-out>pValor:  0.0013080041830140115
+as médias não são iguais!
+</system-out></testcase><testcase classname="test_submit" file="test_submit.py" line="28" name="test_q6" time="0.008"><system-out>dimensoes (485, 11) (321, 11)
+variancias 0.013779906236178684 0.013932499020376172
+media 1.764033613445378 1.75859375
+pValor:  0.5230827295440921
+as médias são iguais
+</system-out></testcase><testcase classname="test_submit" file="test_submit.py" line="33" name="test_q7" time="0.004"><system-out>dimensoes (567, 11) (321, 11)
+variancias 0.014151895923843595 0.013932499020376172
+media 1.787767857142857 1.75859375
+pValor:  0.0004660129347389851
+</system-out></testcase></testsuite>

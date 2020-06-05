@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="1" name="pytest" skipped="0" tests="5" time="3.341"><testcase classname="test_submit" file="test_submit.py" line="3" name="test_q1" time="0.005"></testcase><testcase classname="test_submit" file="test_submit.py" line="9" name="test_q2" time="0.002"></testcase><testcase classname="test_submit" file="test_submit.py" line="15" name="test_q3" time="0.004"></testcase><testcase classname="test_submit" file="test_submit.py" line="21" name="test_q4" time="0.030"><failure message="assert (0.8, 0.9, 0.95) == (0.806, 0.911, 0.959)
+  At index 0 diff: 0.8 != 0.806
+  Full diff:
+  - (0.8, 0.9, 0.95)
+  + (0.806, 0.911, 0.959)
+  ?     ++     ++      +">E   assert (0.8, 0.9, 0.95) == (0.806, 0.911, 0.959)
+      At index 0 diff: 0.8 != 0.806
+      Full diff:
+      - (0.8, 0.9, 0.95)
+      + (0.806, 0.911, 0.959)
+      ?     ++     ++      +</failure></testcase><testcase classname="test_submit" file="test_submit.py" line="27" name="test_q5" time="0.028"></testcase></testsuite>

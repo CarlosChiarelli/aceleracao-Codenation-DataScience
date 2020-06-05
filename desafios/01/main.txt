@@ -1,0 +1,183 @@
+
+import pandas as pd
+import numpy as np
+
+black_friday = pd.read_csv("black_friday.csv")
+
+
+
+black_friday.head()
+
+black_friday.info()
+
+explora = pd.DataFrame(data = {'colunas':list(black_friday.columns),
+                    'tipos':list(black_friday.dtypes),
+                    'na_perct':black_friday.isna().sum() / black_friday.shape[0],
+                    'quantUnicos': black_friday.nunique()})
+
+explora
+
+colsCont = list(explora[explora['quantUnicos'] < 10]['colunas'])
+
+print('CONTAGEM\n\n')
+for coluna in colsCont:
+    print(coluna, '\n', black_friday[coluna].value_counts() / black_friday.shape[0], end='\n\n')
+
+
+
+def q1():
+    # Retorne aqui o resultado da questão 1.
+    #return (black_friday.shape[0], black_friday.shape[1])
+    return black_friday.shape
+
+
+
+
+black_friday.query("Gender == 'F' and Age == '26-35' ")['User_ID'].nunique()
+
+def q2():
+    # Retorne aqui o resultado da questão 2.
+    #black_friday.query("Gender == 'F' and Age == '26-35' ")['User_ID'].nunique()
+    return black_friday.query("Gender == 'F' and Age == '26-35' ").shape[0]
+    
+
+
+
+black_friday['User_ID'].nunique()
+
+def q3():
+    # Retorne aqui o resultado da questão 3.
+    return black_friday['User_ID'].nunique()
+    
+
+
+
+explora['tipos'].nunique()
+#explora['tipos'].value_counts()
+
+def q4():
+    # Retorne aqui o resultado da questão 4.
+    return explora['tipos'].nunique()
+
+
+
+
+black_friday.isna().sum()
+
+type(float((black_friday.isna().sum(axis=1) > 0).mean()))
+
+def q5():
+    # Retorne aqui o resultado da questão 5.
+    return float((black_friday.isna().sum(axis=1) > 0).mean())
+    
+
+
+
+filtro = explora['na_perct'] == explora['na_perct'].max()
+colMaisNull = explora[filtro]['colunas']
+resp6 = black_friday[list(colMaisNull)].isna().sum() 
+int(resp6)
+
+def q6():
+    # Retorne aqui o resultado da questão 6.
+    filtro = explora['na_perct'] == explora['na_perct'].max()
+    colMaisNull = explora[filtro]['colunas']
+    resp6 = black_friday[list(colMaisNull)].isna().sum() 
+    return int(resp6)
+    
+
+
+
+cont = black_friday['Product_Category_3'].value_counts()
+#resp7 = cont.iloc[0]
+resp7 = list(cont.index)[0]
+
+list(cont.index)[0]
+
+cont
+
+def q7():
+    # Retorne aqui o resultado da questão 7.
+    cont = black_friday['Product_Category_3'].value_counts()
+    #resp7 = cont.iloc[0]
+    resp7 = list(cont.index)[0]
+    return resp7
+
+
+
+
+black_friday.head()
+
+black_friday.describe()
+
+def q8():
+    # Retorne aqui o resultado da questão 8.
+    #black_friday['purchaseNormMedia'] = (black_friday['Purchase'] - black_friday['Purchase'].mean()) / black_friday['Purchase'].std()
+    black_friday['purchaseNormMedia'] = (black_friday['Purchase'] - black_friday['Purchase'].min()) / (black_friday['Purchase'].max()-black_friday['Purchase'].min())
+    resp8 = black_friday['purchaseNormMedia'].mean()
+    black_friday.drop('purchaseNormMedia', axis=1, inplace=True)
+    return float(resp8)
+
+
+
+
+black_friday[filtro].describe()
+
+resp9
+
+
+
+def q9():
+    # Retorne aqui o resultado da questão 9.
+    black_friday['purchaseNormMedia2'] = (black_friday['Purchase'] - black_friday['Purchase'].mean()) / black_friday['Purchase'].std()
+    filtro = (black_friday['purchaseNormMedia2'] <= 1) & (black_friday['purchaseNormMedia2'] >= -1)  
+    resp9 = black_friday[filtro].shape[0]
+    black_friday.drop('purchaseNormMedia2', axis=1, inplace=True)
+    return resp9
+
+
+
+
+black_friday['Product_Category_2'].isnull() == black_friday['Product_Category_3'].isnull()
+
+aux = black_friday[['Product_Category_2','Product_Category_3']]
+aux
+
+soma = aux['Product_Category_2'].isnull() != aux['Product_Category_3'].isnull()
+
+if soma.sum() > 0:
+    res10 = False
+else:
+    res10 = True
+
+compare = black_friday['Product_Category_2'].isnull() == black_friday['Product_Category_3'].isnull()
+
+compare
+
+(True in compare)
+
+res10
+
+def q10():
+    # Retorne aqui o resultado da questão 10.
+    aux = black_friday[['Product_Category_2','Product_Category_3']]
+    soma = aux['Product_Category_2'].isnull() != aux['Product_Category_3'].isnull()
+    
+    if soma.sum() > 0:
+        res10 = False
+    else:
+        res10 = True
+        
+    return bool(soma.sum() == 0)
+
+
+
+
+
+
+soma = aux['Product_Category_2'].isnull() != aux['Product_Category_3'].isnull()
+
+soma.sum() > 0
+
+
+
